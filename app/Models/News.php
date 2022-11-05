@@ -9,4 +9,8 @@ class News extends Model
 {
     use HasFactory;
     protected $table = "news";
+
+    public function products(){
+        return $this->hasMany('App\Products','','id');
+    }
 }
