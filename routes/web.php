@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/trangchu',[PageController::class, 'getIndex']);
-Route::get('/loai-san-pham/{id}',[PageController::class, 'getLoaiSp']);
-Route::get('/chi-tiet/{{id}',[PageController::class, 'getChitiet']);
-Route::get('/lien-he', [PageController::class, 'getContact']);
-Route::get('/gioi-thieu',[PageController::class, 'getAbout']);
+Route::get('/type/{id}',[PageController::class, 'getLoaiSp']);
+Route::get('/detail/{{id}',[PageController::class, 'getChitiet']);
+Route::get('/lienhe', [PageController::class, 'getContact']);
+Route::get('/gioithieu',[PageController::class, 'getAbout']);
