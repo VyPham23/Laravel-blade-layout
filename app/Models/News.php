@@ -8,9 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class News extends Model
 {
     use HasFactory;
-    protected $table = "news";
-
-    public function products(){
-        return $this->hasMany('App\Products','','id');
-    }
+    protected $table = 'news';
 }
